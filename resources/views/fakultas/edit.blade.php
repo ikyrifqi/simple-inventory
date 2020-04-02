@@ -5,7 +5,7 @@
   
   <div class="section-header">
     <h1>
-      Category <small>Edit Data</small>
+      Fakultas <small>Edit Data</small>
     </h1>
   </div>
 
@@ -13,14 +13,14 @@
     <div class="col-12 col-md-6 col-lg-6">
         <div class="card">
           <div class="card-header">
-            <a href="{{ route('categories.index') }}"> 
+            <a href="{{ route('fakultas.index') }}"> 
               <button type="button" class="btn btn-outline-info">
                 <i class="fas fa-arrow-circle-left"></i> Back
               </button>
           </a>
           </div>
           <div class="card-body">
-            <form action="{{ route('categories.update', ['category' => $data->id]) }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('fakultas.update', ['id' => $data->id]) }}" method="POST" enctype="multipart/form-data">
               <input type="hidden" name="_method" value="PUT">
               @csrf
               <div class="form-group">
